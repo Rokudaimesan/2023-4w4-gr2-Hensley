@@ -17,14 +17,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
     background-color:burlywood;
+    border-style: solid;
 }
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:brown;
+    background-color:black;
+    text-align: center;
+    border-style: solid;
 }
 
-h3 {
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: bisque;
+    color: saddlebrown;
+    
+    
 }
