@@ -1,4 +1,6 @@
 <footer>
-<h3>le pied de page</h3>
+<h3>Le pied de page</h3>
 </footer>
 <?php wp_footer(); ?>
+</body>
+</html>
