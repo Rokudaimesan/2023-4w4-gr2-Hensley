@@ -10,7 +10,7 @@
     if(have_posts()):
         while (have_posts()) : the_post();
          the_title('<h1>', '</h1>');
-         the_content(); ?>
+         the_content('<h3>', '</h3>'); ?>
          <hr>
         <?php  endwhile;
 endif;
