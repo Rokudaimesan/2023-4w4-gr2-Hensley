@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
     background-color:burlywood;
-    border-style: solid;
+
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
     background-color:black;
     text-align: center;
     border-style: solid;
+    border-width: 5px;
 }
 
 p {
@@ -33,4 +34,9 @@ p {
     color: saddlebrown;
     
     
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: saddlebrown;
 }
