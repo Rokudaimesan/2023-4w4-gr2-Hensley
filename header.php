@@ -8,13 +8,10 @@
 </head>
 
 <body>
-    <header>
-        <h3>-<?= bloginfo('name') ?></h3>
-        <h3>-<?= bloginfo('description') ?></h3>
-        <h3>-<?= bloginfo('url') ?></h3>
-        <h1><a href=""><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
-    </header>
-    
-</body>
-</html>
+   <header>
+     <h3>-<?= bloginfo('name') ?></h3>
+     <h3>-<?= bloginfo('description') ?></h3>
+     <h3>-</h3>
+    <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+    <h2><?= bloginfo('description') ?></h2>
+   </header>
