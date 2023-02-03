@@ -30,7 +30,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: beige;
+  background-color: bisque;
 }
 
 /**
@@ -47,6 +47,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: coral;
 }
 
 /* Grouping content
