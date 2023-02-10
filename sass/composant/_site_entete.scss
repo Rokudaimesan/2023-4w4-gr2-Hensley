@@ -1,0 +1,27 @@
+.site_header_logo{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.menu-entete-container {
+
+    .menu { // ul 
+       display: flex;
+       list-style-type: none;
+       justify-content: flex-end;
+      .menu-item { //li
+         color: rgb(0, 45, 111);
+    
+         a {
+         display: block;
+         padding: 5px 20px;
+        }
+    
+    }
+    
+    
+    
+    }    
+    }

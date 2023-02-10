@@ -30,7 +30,6 @@ html {
  */
 body {
   margin: 0;
-  background-color: bisque;
 }
 
 /**
@@ -47,7 +46,6 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  color: coral;
 }
 
 /* Grouping content
@@ -375,10 +373,10 @@ a {
   color: rgb(76, 88, 255);
 }
 a:visited {
-  color: rgb(191, 117, 184);
+  color: rgb(68, 73, 222);
 }
 a:hover {
-  color: rgb(249, 29, 29);
+  color: rgb(246, 74, 74);
 }
 
 /* --------------------------------------------- composant */
@@ -391,6 +389,25 @@ a:hover {
 .site_footer section {
   border: 1px solid rgb(0, 0, 0);
   flex: 1 1 200px;
-  color: rgb(56, 26, 4);
-  background-color: rgb(148, 101, 55);
+  color: rgb(0, 0, 0);
+  background-color: rgb(253, 253, 253);
+}
+
+.site_header_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 45, 111);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */
