@@ -327,10 +327,12 @@ h1 {
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  text-align: center;
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  text-align: center;
 }
 
 h4 {
@@ -369,6 +371,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+body {
+  background-color: bisque;
+}
+
 a {
   color: rgb(76, 88, 255);
 }
@@ -390,7 +396,9 @@ a:hover {
   border: 1px solid rgb(0, 0, 0);
   flex: 1 1 200px;
   color: rgb(0, 0, 0);
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(246, 164, 64);
+  padding: 15px;
+  margin-top: 35px;
 }
 
 .site_header_logo {
@@ -410,4 +418,29 @@ a:hover {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+}
+
+/***
+.blocflex {
+    display :flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article {
+        flex: 1 0 200px;
+        border: 2px solid rgb(78, 77, 77);
+        padding: 10px;
+        background-color:rgb(248, 174, 83);
+    }
+}
+*/
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  border: 1px solid #aaa;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
