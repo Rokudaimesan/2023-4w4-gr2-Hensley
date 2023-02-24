@@ -388,6 +388,15 @@ a:hover {
 
 /* Les balise qu'on utilise dans la conversion des fichiers markdown */
 /*liste */
+/*
+li::before {
+    content: ">";
+    background: lightgray;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    margin-inline-end: 1rem;
+  }
+*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -395,14 +404,19 @@ ul {
   overflow: hidden;
 }
 
-li::before {
-  background: lightgray;
-  border-radius: 1ch;
-  padding-inline: 1ch;
-  margin-inline-end: 1ch;
+/* ------------------------------------ pre */
+li {
+  margin-left: 10px;
 }
 
-/* ------------------------------------ pre */
+pre {
+  margin-left: 15px;
+}
+
+p {
+  margin-left: 5px;
+}
+
 /* --------------------------------------------- composant */
 .site_footer {
   display: flex;
@@ -441,12 +455,13 @@ li::before {
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
-  padding: 5px 20px;
+  padding: 5px 25px;
 }
 .menu-entete-container .menu li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background: rgb(22, 23, 26);
 }
 .menu-entete-container .menu li a:hover {
   background-color: rgb(37, 36, 36);
@@ -476,4 +491,6 @@ li::before {
   border: 1px solid rgb(25, 25, 25);
   padding: 1rem;
   background-color: white;
+  border-radius: 6px;
+  box-shadow: 10px 10px #888888;
 }/*# sourceMappingURL=style.css.map */
