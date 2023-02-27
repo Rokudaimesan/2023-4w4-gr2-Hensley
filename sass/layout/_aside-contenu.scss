@@ -1,0 +1,53 @@
+/**
+*   Mise en page général avec  
+*/
+.site__header {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: antiquewhite;
+  }
+  
+  .site__main {
+    grid-area: main;
+    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  }
+  
+  .site__footer {
+    grid-area: footer;
+    background-color: antiquewhite;
+  }
+  .site_aside {
+    grid-area: aside;
+    background-color: black;
+    display: flex;
+    justify-content:flex-start;
+    color:rgb(76, 88, 255);
+  }
+
+  #menu-aside {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 45px 60px;
+    
+  }
+  .site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+     row-gap: 50px;
+    background-color: bisque;
+    @media screen and (min-width: 1000px) {
+        grid-template-areas:
+        "header"
+        "aside main"
+      /* ". main"*/ 
+        "footer footer";
+    }
+    
+
+  }

@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="site">
    <header class="site_header">
       <section class="site_header_logo">
          <div class="logomenu">
@@ -22,3 +22,10 @@
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
+   <aside class="site_aside">
+      <h3>Menu secondaire</h3>
+      <?php wp_nav_menu(array(
+         "menu" => "aside",
+         "container" => "nav"
+      )); ?>
+   </aside>
