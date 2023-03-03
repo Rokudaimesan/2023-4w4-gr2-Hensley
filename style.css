@@ -487,12 +487,21 @@ p {
   gap: 2rem;
   margin: 2rem;
 }
-.blocflex article {
+.blocflex .blockflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   border: 1px solid rgb(25, 25, 25);
   padding: 1rem;
   background-color: white;
   border-radius: 6px;
   box-shadow: 10px 10px #888888;
+}
+.blocflex .blockflex__article h3, .blocflex .blockflex__article h5, .blocflex .blockflex__article h6, .blocflex .blockflex__article p {
+  margin: 0;
+  padding: 0;
 }
 
 /* --------------------------------------------- layout */
