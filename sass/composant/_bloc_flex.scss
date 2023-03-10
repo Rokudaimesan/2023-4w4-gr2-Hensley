@@ -1,8 +1,10 @@
 
 .blocflex {
     display :flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    column-gap: 20px;
+    gap: 25px;
 }
 
 
@@ -16,8 +18,8 @@
     margin: 2rem;
 */ 
     .blocflex__article {
-      display: flex; 
-      flex:1 2 400px;
+      display: flex;
+      flex: 300px 2;    
       flex-direction: column;
       border: 1px solid rgb(25, 25, 25);
       padding: 1rem;
