@@ -41,10 +41,10 @@
       "footer";
      //row-gap: 50px;
     background-color: bisque;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
         grid-template-areas:
         "header header"
-        "aside main"
+        "aside "
       /* ". main"*/ 
         "footer footer";
     }

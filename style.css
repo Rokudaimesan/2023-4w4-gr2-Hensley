@@ -602,7 +602,7 @@ p {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-areas: "header header" "aside main" "footer footer";
+    grid-template-areas: "header header" "aside " "footer footer";
   }
 }
 
