@@ -3,6 +3,6 @@
  * template part pour afficher la galerie dans la page d'accueil
  */
 ?>
-<article class="blockflex_galerie">
+<article class="blockflex__galerie">
   <?php the_content() ?>
 </article>
