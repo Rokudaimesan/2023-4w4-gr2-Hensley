@@ -528,7 +528,7 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
   column-gap: 20px;
-  gap: 25px;
+  gap: 20px;
 }
 
 /*
