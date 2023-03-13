@@ -7,7 +7,13 @@ wp_enqueue_style(  'style-principale',//identificateur du link css
                    filemtime(get_template_directory() . '/style.css') // version de notre style.css 
                 );
             }     
-            add_action( 'wp_enqueue_scripts', 'ajouter_styles' );                       
+            add_action( 'wp_enqueue_scripts', 'ajouter_styles' );   
+            
+         wp_enqueue_style("style-google-font",
+         "https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap",
+          array(),
+          false);
+
    /* ----------------------------------- Enregistrement des menus */
 function enregistrement_nav_menu(){
     register_nav_menus( array(
@@ -22,10 +28,13 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
     if($args->menu == 'cours') {
 // Modifier la longueur du titre en fonction de vos besoins
-$title = wp_trim_words($title, 3, ' ... '); // on garde uniquement trois mots pour le titre du choix
+$sigle = substr($title,0,7);
+$title = substr($title,7);
+$title = "<code>". $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... '). "</p>"; // on garde uniquement trois mots pour le titre du choix
 }
 return $title;
 }
+
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
 
  
