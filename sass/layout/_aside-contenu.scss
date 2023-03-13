@@ -16,7 +16,7 @@
     grid-area: footer;
     background-color: antiquewhite;
   }
-  .site_aside {
+  .site__aside {
     grid-area: aside;
     background-color: black;
     display: flex;
@@ -42,9 +42,10 @@
      //row-gap: 50px;
     background-color: bisque;
     @media screen and (min-width: $largeur__bureau) {
-        grid-template-areas:
+      grid-template-columns: 20% auto;  
+      grid-template-areas:
         "header header"
-        "aside "
+        "aside main"
       /* ". main"*/ 
         "footer footer";
     }
@@ -56,11 +57,10 @@
   "header"
   "main"
   "footer";
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $largeur__bureau) {
     grid-template-columns:auto;
     grid-template-areas:
       "header"
-      "aside"
       "main"
       "footer";
  }

@@ -27,12 +27,13 @@
         "container" => "nav"
      ))?>
        <?php get_search_form(); ?>
-       <label class="burger" for="chkMenu"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32"></label>
+       <label class="burger" for="chkMenu"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="20" height="20"></label>
        </div>
       </section>
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
-   <?php if(! is_front_page())
+   <?php if(! is_front_page()) {
    get_template_part("template_parts/aside");
+   }
    ?>
