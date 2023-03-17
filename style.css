@@ -417,23 +417,26 @@ p {
   margin-left: 5px;
 }
 
+.contenu {
+  width: 1544px;
+}
+
 /* --------------------------------------------- composant */
-.site_footer {
+.site__footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.site_footer section {
+.site__footer section {
   border: 1px solid rgb(104, 104, 104);
   flex: 1 1 200px;
   color: rgb(0, 102, 255);
   background-color: rgb(0, 0, 0);
   padding: 15px;
-  margin-top: 35px;
 }
 
-.site_header_logo {
+.site__header_logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,7 +445,7 @@ p {
 
 .menu_recherche {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
   flex-direction: column-reverse;
   justify-content: center;
@@ -487,7 +490,7 @@ p {
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
-  padding: 5px 25px;
+  padding: 5px 20px;
   white-space: nowrap;
 }
 .menu-entete-container .menu li a {
@@ -503,7 +506,7 @@ p {
 /* //////////////////////////////////////////////////// Zone de recherche  */
 .recherche {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* ------------------------------------------ Bouton burger */
@@ -525,9 +528,8 @@ p {
 
 .blocflex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 20px;
   gap: 20px;
 }
 
@@ -542,8 +544,11 @@ p {
 */
 .blocflex__article {
   display: flex;
-  flex: 300px 2;
+  flex: 1 0 300px;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
   border: 1px solid rgb(25, 25, 25);
   padding: 1rem;
   background-color: white;
@@ -559,6 +564,38 @@ p {
   flex: 1 0 100%;
 }
 
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item code {
+  display: block;
+  white-space: nowrap;
+}
+.menu-cours-container .menu .menu-item code p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item code p {
+    display: block;
+  }
+}
+
 /* --------------------------------------------- layout */
 /**
 *   Mise en page général avec  
@@ -566,7 +603,7 @@ p {
 .site__header {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: bisque;
 }
 
 .site__main {
@@ -579,7 +616,7 @@ p {
   background-color: antiquewhite;
 }
 
-.site_aside {
+.site__aside {
   grid-area: aside;
   background-color: black;
   display: flex;
@@ -602,7 +639,8 @@ p {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-areas: "header header" "aside " "footer footer";
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 
@@ -612,6 +650,6 @@ p {
 @media screen and (min-width: 1000px) {
   .no-aside {
     grid-template-columns: auto;
-    grid-template-areas: "header" "aside" "main" "footer";
+    grid-template-areas: "header" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */

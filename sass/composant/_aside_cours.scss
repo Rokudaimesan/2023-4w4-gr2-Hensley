@@ -21,7 +21,7 @@
                 white-space: nowrap;
              p{
                 display: none;
-                @media screen and (min-width: $largeur_bureau) {
+                @media screen and (min-width: $largeur__bureau) {
                     display: block;
                     
                 }

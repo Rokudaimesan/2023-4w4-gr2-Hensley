@@ -1,10 +1,10 @@
-.site_footer{
+.site__footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.site_footer section {
+.site__footer section {
     border:  1px solid rgb(104, 104, 104);
     flex: 1 1 200px;
     color: rgb(0, 102, 255);

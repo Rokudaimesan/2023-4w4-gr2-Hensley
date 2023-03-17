@@ -17,8 +17,8 @@
 <!--body class="site  <?php // $nouvelle_classe ?>">-->
 <body class="site <?php echo (is_front_page()?'no-aside':'');?>">
 
-   <header class="site_header">
-      <section class="site_header_logo">
+   <header class="site__header">
+      <section class="site__header_logo">
       <?php the_custom_logo();?>
       <div class="menu_recherche">
        <input type="checkbox" id="chkMenu">  

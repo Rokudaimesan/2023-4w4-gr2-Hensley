@@ -26,5 +26,5 @@
       <?php endif;
       wp_reset_postdata();?>
    </section>
+   <?php get_footer(); ?>
 </main>
-<?php get_footer(); ?>
