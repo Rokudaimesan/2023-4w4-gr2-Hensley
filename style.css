@@ -421,6 +421,11 @@ p {
   width: 1544px;
 }
 
+.page_search p {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -529,6 +534,13 @@ p {
 .blocflex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blocflex_search {
+  display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }

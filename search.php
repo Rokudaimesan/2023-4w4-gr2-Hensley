@@ -5,7 +5,7 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="page_search">
 <h3>Résultats de la recherche</h3>
 <section class="blocflex_search">
 <?php
