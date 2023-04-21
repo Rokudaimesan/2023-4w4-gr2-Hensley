@@ -52,6 +52,7 @@ add_theme_support('custom-logo',
                         'width' => 150,
 ));
 add_theme_support( 'post-thumbnails' );
+add_theme_support('custom-background');
 
 
 /**
@@ -71,3 +72,27 @@ function cidweb_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+
+     function enregistrer_sidebar() {
+        register_sidebar( array(
+            'name' => __( 'Footer 1', '4w4-eddy-martin' ),
+            'id' => 'footer_1',
+            'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4-eddy-martin' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>',
+        ) );
+    
+        register_sidebar( array(
+            'name' => __( 'Footer 2', '4w4-eddy-martin' ),
+            'id' => 'footer_2',
+            'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4-eddy-martin' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>',
+        ) );
+    
+    }
+    add_action( 'widgets_init', 'enregistrer_sidebar' );  

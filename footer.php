@@ -1,7 +1,11 @@
 <footer class="site__footer">
-   <section>Colonne 1</section>
+   <section><?php the_custom_logo(); ?></section>
    <section>Colonne 2</section>
-   <section>Colonne 3</section>
+   <section>
+      <div class="sidebar">
+         <?php dynamic_sidebar('footer1');?>
+      </div>
+   </section>
 </footer>
 <?php wp_footer(); ?>
 </body>
