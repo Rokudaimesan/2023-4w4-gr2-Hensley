@@ -6,10 +6,29 @@
         flex-direction: column;
         justify-content: space-between;
         border: 3px solid #aaa;
-        height: 100px;
+        background-color: rgba(255, 255, 255, .5);
+        //height: 100px;
         margin: 10px;
+        padding: 5px; 
         a {
-            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            
+            .title {
+                display: block;
+                font-size: 2rem;
+            }
+            .description{
+                font-size: 1rem;
+            }
+            .menu-thumbnail{
+                display: block;
+                width: 150px;
+                height: 150px;
+            }
         }
 
        }

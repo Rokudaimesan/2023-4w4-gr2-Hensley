@@ -14,7 +14,7 @@
         echo get_the_ID();
         }
         else {
-        echo get_the_post_thumbnail(3,'thumbnail');
+        echo get_the_post_thumbnail(33,'thumbnail');
         }
         ?>
          <h2><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h2>
