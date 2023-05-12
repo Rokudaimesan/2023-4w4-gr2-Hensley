@@ -1,4 +1,5 @@
--Examen intra 4w4
+-Tp2
 -Hensley Pierre
--Adaptation de la page search.php 
+-Adaption d'un carrousel et d'une page web dynamique 
+-Amélioration du carrousel, du bas de page et l'affichage des thumbnails
 -https://cidweb17.sg-host.com/
