@@ -1,5 +1,5 @@
 -Tp2
 -Hensley Pierre
 -Adaption d'un carrousel et d'une page web dynamique 
--Amélioration du carrousel, du bas de page et l'affichage des thumbnails
+-Amélioration du carrousel, du bas de page,l'affichage des thumbnails et intégration des widgets
 -https://cidweb17.sg-host.com/

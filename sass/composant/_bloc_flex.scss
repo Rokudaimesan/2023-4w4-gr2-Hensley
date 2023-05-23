@@ -7,7 +7,7 @@
    gap: 20px;
    background-color: rgba(255,255,255,.1);
    min-height: 100vh;
-
+   
 }
 
 .blocflex_search {
@@ -52,6 +52,10 @@
     .blockflex__galerie {
       flex: 1 0 100%;
     }
+
+    #menu-evenement {
+      border: 3px solid black;
+  }
     
 
 
